@@ -96,7 +96,7 @@
         console.log('not okay');
     }
 
-    const num = 50;
+    const num = 51;
 
     if (num < 49) {
         console.log('error');
@@ -123,3 +123,78 @@
             console.log('не повезло');
             break;
     }
+    
+    const hamburger = 3;
+    const fries = 3;
+    const cola = 0;
+    const nuggets = 2;
+
+    if (hamburger === 3 && cola === 2 || fries === 3 && nuggets) {
+        console.log('Все двольны');
+    } else {
+        console.log('Мы уходим');
+    }
+
+    console.log(hamburger === 3 && cola === 2 || fries === 3 && nuggets);
+
+    
+    //Циклы
+
+    let numb = 50;
+    // while (numb <= 55) {
+    //     console.log(numb);
+    //     numb++;
+    // }
+
+    // do {
+    //     console.log(numb);
+    //     numb++;
+    // }
+    // while (numb <= 55);
+
+    for (let i=0; i <= 10; i++) {
+        if (i%2 === 0) {
+            // break;
+            continue;
+        }
+        console.log(i);
+    }
+
+    for (let i = 0; i <= 3; i++) {
+        console.log('i = ' + i);
+        for (let j = 0; j <= 3; j++) {
+            console.log('j = ' + j);
+        }
+    }
+
+    let result = '';
+
+    for (let i = 0; i <= 6; i++) {
+        for (let j = 0; j <= i; j++) {
+            result+='*';
+        }
+        result += '\n';
+    }
+
+    console.log(result);
+
+    first: for (let i = 0; i <= 3; i++) {
+        console.log(`First level = ${i}`);
+        for (let j = 0; j <= 3; j++) {
+            console.log(`Second level = ${j}`);
+            for (let k = 0; k <= 3; k++) {
+                if (k === 2) {break first;}
+                console.log(`Third level = ${k}`);
+            }
+        }
+    }
+
+    let i = 2;
+    while (i <= 16) {
+        if (i % 2 === 0) {
+                continue;
+            } 
+        console.log(i);
+        i++;     
+    }
+    
